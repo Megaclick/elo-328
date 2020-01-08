@@ -216,9 +216,13 @@ consiste en 5 pasos
 3) Clasificacion de la direccion de los bordes: Se clasificac la direccion en 4 angulos.  ![](img/dir_borde.png)
                          [0,45,90,135]
 
-4) Non Maximum suppresor: usado para disminuir los bordes gruesos de sobel, busca que el pixel del centro sea de mayor intensidad, si se cumple, elimina los 
+4) Non Maximum suppresor: usado para disminuir los bordes gruesos de sobel, busca que el pixel del centro sea de mayor intensidad, si se cumple, elimina los pixeles en direccion del gradiente.
+![](img/canny_4.png)
 
-# FALTA TERMINAR CANNY
+5) umbral de histeresis: se definen dos umbrales, si el pixel es mayor al umbral mayor se selecciona como borde y se itera con los pixeles de la vencidad que esten entre los dos umbrales.
+![](img/histeresis.png)
+
+
 
 #### Filtro de Agudizado
 Destacar detalles finos y corregir imagenes borrosas
@@ -268,3 +272,12 @@ int connectedComponents(InputArray image, OutputArray labels,int connectivity=8,
 ![](img/pixel_con.png)
 
 #### Mezcla de gaussianas
+
+
+# TORPEDO C1
+
+![](img/prueba.png)
+![](img/prueba2.png)
+![](img/prueba3.png)
+![](img/prueba4.png)
+![](img/prueba5.png)
