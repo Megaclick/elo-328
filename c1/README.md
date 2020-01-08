@@ -1,6 +1,10 @@
 # Resumen C1 PDI en **__MARKDOWN__**
+
+### En proc_basico esta como sacar img, video y como iterar sobre ellos
+### en gamma esta la tarea 1 de gamma
 ___
 ##Intro
+
 **Pıxel** (picture element):Elemento basico de una imagen digital, que contiene valores **cuantizados** que representan la intensidad (brillo) o el color del pixel.
 
 **Cuantificacion** : restringir valores **continuos** a **discretos**. (Ej: digitalizar una foto)
@@ -14,15 +18,23 @@ ___
 * Color + transparencia = 4 Canales = 32 bpp
 
 #### Valores cv::mat
+~~~
 
 CV_8U - 8-bit unsigned integers ( 0..255 )
+
 CV_8S - 8-bit signed integers ( -128..127 )
+
 CV_16U - 16-bit unsigned integers ( 0..65535 )
+
 CV_16S - 16-bit signed integers ( -32768..32767 )
+
 CV_32S - 32-bit signed integers ( -2147483648..2147483647 )
+
 CV_32F - 32-bit floating-point numbers ( -FLT_MAX..FLT_MAX, INF, NAN )
+
 CV_64F - 64-bit floating-point numbers ( -DBL_MAX..DBL_MAX, INF, NAN )
 
+~~~
 #### MATS
 // Crear una matriz compleja de 7x7 con el valor (1+3i).
 ~~~c++
@@ -248,9 +260,11 @@ Posibles mejoras:
 
 #### Componentes conectados
 Luego de segmentar, se busca agrupar los pixeles conectados
-La siguiente funcion etiqueta cada grupo con unvalor diferente
+La siguiente funcion etiqueta cada grupo con un valor diferente
 ~~~c++
 int connectedComponents(InputArray image, OutputArray labels,int connectivity=8, int ltype=CV_32S)
 ~~~
 
 ![](img/pixel_con.png)
+
+#### Mezcla de gaussianas
