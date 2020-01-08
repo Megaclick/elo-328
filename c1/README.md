@@ -216,7 +216,7 @@ consiste en 5 pasos
 3) Clasificacion de la direccion de los bordes: Se clasificac la direccion en 4 angulos.  ![](img/dir_borde.png)
                          [0,45,90,135]
 
-4) Non Maximum suppresor: usado para disminuir los bordes gruesos de sobel
+4) Non Maximum suppresor: usado para disminuir los bordes gruesos de sobel, busca que el pixel del centro sea de mayor intensidad, si se cumple, elimina los 
 
 # FALTA TERMINAR CANNY
 
