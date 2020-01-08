@@ -269,6 +269,7 @@ La siguiente funcion etiqueta cada grupo con un valor diferente
 int connectedComponents(InputArray image, OutputArray labels,int connectivity=8, int ltype=CV_32S)
 ~~~
 
+
 ![](img/pixel_con.png)
 
 #### Mezcla de gaussianas
@@ -281,3 +282,5 @@ int connectedComponents(InputArray image, OutputArray labels,int connectivity=8,
 ![](img/prueba3.png)
 ![](img/prueba4.png)
 ![](img/prueba5.png)
+![](img/prueba6.png)
+![](img/prueba7.png)
