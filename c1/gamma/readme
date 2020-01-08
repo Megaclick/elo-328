@@ -1,0 +1,18 @@
+Compilar programa
+g++ GAMMA.cpp -o GAMMA `pkg-config --cflags --libs opencv`
+
+Uso del programa
+
+"./GAMMA -v gamma [-f x y w h] [-c r g b]\n"
+        "./GAMMA -i imagen gamma [-f x y w h] [-c r g b]\n" 
+        "-v: usar webcam.\n"
+        "-i: usar imagen.\n"
+        "image: Ruta de imagen a procesar.\n"
+        "gamma: Nivel de Gamma. Debe ser un valor real, mayor que 0.\n"
+        "-f: (Optional) Define a rea a la que aplica gamma. Resto es borde.\n"
+        "Se define rectangulo posicion (x,y) y tamanno W x H.\n"
+        "-c:    (Optional) Color (r,g,b) del frame."
+
+Ejemplos 
+./GAMMA -v 0.5 -f 100 100 500 500
+./GAMMA -i southpark.jpg 0.1 -f 100 100 500 500 -c 0 255 0
